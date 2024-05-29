@@ -8,7 +8,6 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import Model from './components/Model';
 
 // Register plugins 
 gsap.registerPlugin(ScrollTrigger);
@@ -23,8 +22,6 @@ function App() {
 
   return (
     <>
-      <Model />
-    
       <div>
         {/* <Navigation />   */}
         <div id="sections">
@@ -39,9 +36,6 @@ function App() {
         <h4>Heading 4, Four</h4>
         <p>Paragraph, because I have a lot to say</p>
       </div>
-
-      
-
     </>
   )
 }
