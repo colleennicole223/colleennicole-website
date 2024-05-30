@@ -23,9 +23,9 @@ function App() {
   return (
     <>
       <div>
-        {/* <Navigation />   */}
-        <div id="sections">
         
+        <div id="sections">
+        <Navigation />  
         <Hero  />
         <Projects />
         <Experience />
