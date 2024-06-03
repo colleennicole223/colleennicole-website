@@ -1,22 +1,16 @@
 
 :root {
-  /*Default styling from vite+react import*/
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  
   /* CSS Color Palette Variables */
   color-scheme: light dark;
   --background-color: #190B26;
   /* --background-color: antiquewhite; */
   
-  --accent-color: #ffc364;
+  --accent-color: #ecb37d;
+  --accent-color: #eddbff;
   --header-color: #D3B7ED;
   --text-color: #9A87AE;
+  --shader-color: rgb(101, 82, 117);
 
-  /* --accent-font: Inter;
-  --header-font: Inter;
-  --text-font: Inter; */
   
   background-color: var(--background-color);
 
@@ -25,9 +19,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /*Updated*/
   color: var(--text-color);
   font-size: 16px;
+  font-weight: 400;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 body{
@@ -36,19 +31,33 @@ body{
   padding: 0;
 }
 
-#sections {
-  /* background-color: greenyellow; */
-  display: flex;
-  flex-direction: column;
+h1{
+  color: var(--header-color);
+  font-size: calc(1vw + 42px);
+  margin: 0px;
 }
 
-.section-content {
-  padding: 90px 50px;
-  font-size: 16px;
-  /* background-color: pink; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+h2{
+  color: var(--text-color);
+  font-size: calc(1vw + 20px);
+  margin: 0px;
+}
+
+h4 {
+  font-size: calc(1vw + 24px);
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0px;
+}
+
+.highlight {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+p {
+  font-size: calc(1vw + 16px);
+  color: var(--text-color);
 }
 
 .navigation{
@@ -61,8 +70,11 @@ body{
   left: 0;
   right: 0;
   padding: 12px;
-  padding-bottom: 25px;
   position: fixed;
+  transition: ease 0.4s;
+  &--scrolled {
+    height: 40px;
+  }
 }
 
   .navLinks a{
@@ -75,27 +87,56 @@ body{
     width: 175px;
   }
 
+  .navBtn {
+    display: block;
+    cursor: pointer;
+    z-index: 5;
+    background: none;
+    border: none;
+    border-radius: 20;
+  }
+
+  .navLinks{
+    display: none;
+  }
+
+  .navLinks.expand{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    padding: 100px 46px;
+    background-color: var(--background-color);;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 1.5rem;
+    gap: 2rem;
+  }
+
+#sections {
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    
+  }
+  
+  .section-content {
+    /* background-color: antiquewhite; */
+    padding: 24px;
+  }
+
 #home {
     /* background-color:orange;  */
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-  }
-
-  #home h1{
-    color: var(--header-color);
-    font-size: calc(2vw + 36px);
-    margin-top: 0px;
-  }
-
-  #home h4 {
-    font-size: calc(1.5vw + 16px);
-    font-weight: 500;
-    z-index: 5;
-    color: var(--accent-color);
-    font-family: var(--accent-font);
+    text-align: center;
   }
 
   .backgroundVideo{
@@ -118,18 +159,19 @@ body{
     position: absolute;
   }
 
+  #home h2 {
+    color: var(--shader-color);
+  }
+
   #about{
-    height: 100vh;
     display: flex;
-    padding: 100px 0px;
+    flex-direction: column;
     align-items: flex-start;
   }
 
-  .aboutContent {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-  }
+    #about h4 {
+      margin-bottom: 16px;
+    }
 
   .socialIcons{
     display: flex;
@@ -145,27 +187,7 @@ body{
     margin-top: 36px;
   }
 
-  #about h1 {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-size: calc(2vw + 36px);
-    font-weight: 600;
-    z-index: 5;
-    color: var(--header-color);
-  }
-
-  #about h4 {
-    font-size: calc(1.5vw + 16px);
-    font-weight: 500;
-    z-index: 5;
-    color: var(--accent-color);
-    font-family: var(--accent-font);;
-  }
-
-  #about p {
-    color: var(--text-color);
-  }
-
+  
 
 /* #projects {
   background-color: green;
@@ -270,23 +292,20 @@ button:focus-visible {
 
 /* Small devices (phones, 576px and up) */
 @media (min-width: 0) { 
-  .section-content {
-    /* padding: 15px 15px;  */
+  
+  /* .section-content {
     padding: 0px 15px;
     font-size: 16px;
   }
   h2 {
-    /*Section Headers*/
     font-size: calc(3vw + 16px);
     margin: 0px;
   }
   h4 {
-    /*Tile Header*/
     font-size: calc(0.75vw + 16px);
     margin: 0px;
   }
   h5 {
-    /*Tile Header*/
     font-size: 16px;
     margin: 0px;
     font-weight: 400;
@@ -295,34 +314,7 @@ button:focus-visible {
   p{
     margin: 0px;
     font-size: calc(0.5vw + 16px);
-  }
-  .navBtn {
-    display: block;
-    cursor: pointer;
-    z-index: 5;
-    background: none;
-    border: none;
-    border-radius: 20;
-  }
-  .navLinks{
-    display: none;
-  }
-  .navLinks.expand{
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    padding: 100px 46px;
-    background-color: var(--background-color);;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    font-size: 1.5rem;
-    gap: 2rem;
-  }
-
+  } */
 
  }
 

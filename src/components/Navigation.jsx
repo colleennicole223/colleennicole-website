@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import menu1 from '../button-menu-2.svg';
 import logo from '../icon-logo.svg';
 import close1 from '../button-close-1.svg';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Navigation = () => {
 
@@ -14,6 +16,20 @@ const Navigation = () => {
       setExpandState(false);
     }
 
+    // 🟢 From GSAP: to hide nav bar when scrolling down 
+    const showAnim = gsap.from('.navigation', { 
+      yPercent: -100,
+      paused: true,
+      duration: 0.2
+    }).progress(1);
+    ScrollTrigger.create({
+      start: "top top",
+      end: "max",
+      onUpdate: (self) => {
+        self.direction === -1 ? showAnim.play() : showAnim.reverse()
+      }
+    });
+
     return (
         <>
         <section className="navigation">
@@ -21,6 +37,7 @@ const Navigation = () => {
           <img className='logo' src={logo} />
           <div className={`navLinks ${navExpand ? 'expand' : ''}`}>
                 <a href="#home" onClick={closeNav}>Home</a>
+                <a href="#about" onClick={closeNav}>About</a>
                 <a href="#projects" onClick={closeNav}>Projects</a>
                 <a href="#experience" onClick={closeNav}>Experience</a>
                 <a href="#contact" onClick={closeNav}>Contact</a>
