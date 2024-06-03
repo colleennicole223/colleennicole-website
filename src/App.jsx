@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import About from './components/About';
 
 // Register plugins 
 gsap.registerPlugin(ScrollTrigger);
@@ -27,6 +28,7 @@ function App() {
         <div id="sections">
         <Navigation />  
         <Hero  />
+        <About />
         <Projects />
         <Experience />
         <Contact />

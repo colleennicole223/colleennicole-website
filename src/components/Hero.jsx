@@ -1,18 +1,18 @@
 import React from 'react'
+// import video1 from '../video-1.mp4';
 
 
 const Hero = () => {
   return (
-    
+    <>
     <section id="home">
-      <div className="section-content">
-        <h1>Welcome to my portfolio</h1>
-      </div>
-      
+      {/* <video className="backgroundVideo" src={video1} autoPlay loop muted>
+        </video> */}
+        <h4>hello, my name is</h4>
+        <h1>[ COLLEEN ]</h1>
+      <div className="heroFooter"></div> 
     </section>
-
-    
-    
+    </>
   )
 }
 
