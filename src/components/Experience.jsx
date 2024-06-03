@@ -4,12 +4,9 @@ const Experience = () => {
   return (
     <section id="experience">
       <div className="section-content">
-        <h2>Experience</h2>
-        <div className="projectTiles">
-          <button className='dropdown'>1</button>
-          <button className='dropdown'>2</button>
-          <button className='dropdown'>3</button>
-        </div> 
+        <h4>[ 3 ]</h4>
+        <h2>Professional Experience</h2>
+        <p>Write a brief introduction about yourself here.</p>
       </div>
     </section>
   )

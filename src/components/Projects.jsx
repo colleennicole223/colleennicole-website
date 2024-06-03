@@ -7,6 +7,7 @@ const Projects = () => {
   return (
     <section id="projects" >
       <div className="section-content">
+        <h4>[ 2 ]</h4>
         <h2>Projects</h2>
         <p>Write a brief introduction about yourself here.</p>
 

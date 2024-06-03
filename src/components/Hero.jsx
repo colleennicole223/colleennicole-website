@@ -13,7 +13,7 @@ const Hero = () => {
         </video> */}
         {/* <h4> hello, my name is</h4> */}
         <h1 >COLLEEN</h1>
-        <h2> DESIGNER, ENGINEER, & PROJECT COORDINATOR</h2>
+        <h3> DESIGNER, ENGINEER, & PROJECT COORDINATOR</h3>
         <h1>FULTON</h1>
         {/* <h4>welcome to my portfolio</h4> */}
       <div className="heroFooter"></div> 

@@ -33,10 +33,13 @@ function App() {
         <Experience />
         <Contact />
         </div>
+
+
+
         <h1>Heading 1, One</h1>
         <h2>Heading 2, Two</h2>
         <h4>Heading 4, Four</h4>
-        <p>Paragraph, because I have a lot to say</p>
+        <p>Paragraph, <span className='highlight'>because</span> I have a lot to say</p>
       </div>
     </>
   )
