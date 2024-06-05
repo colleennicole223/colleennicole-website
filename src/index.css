@@ -234,8 +234,8 @@ p {
   .projectTiles{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    margin-top: 24px;
-    gap: 16px;
+    margin-top: 64px;
+    gap: 64px;
   }
     
     .tile {
@@ -247,8 +247,8 @@ p {
       height: fit-content;
       display: flex;
       flex-direction: column;
-      gap: 24px;
-      -ms-grid-row-span: -1/1;
+      gap: 36px;
+      /* -ms-grid-row-span: -1/1; */
     }
 
       .link {
@@ -296,7 +296,7 @@ p {
           }
   
   .tile:hover {
-    transform: translateY(-8px);
+    /* transform: translateY(-5px); */
     transition: transform 0.5s ease; /* Add transition effect */
   }
 
