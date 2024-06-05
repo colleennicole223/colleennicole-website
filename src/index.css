@@ -2,16 +2,19 @@
 :root {
   /* CSS Color Palette Variables */
   color-scheme: light dark;
-  --background-color: #190B26;
-  /* --background-color: antiquewhite; */
-  
-  --accent-color: #ecb37d;
+  /* --accent-color: #ecb37d;
   --accent-color: #eddbff;
   --header-color: #D3B7ED;
   --text-color: #9A87AE;
   --shader-color: rgb(101, 82, 117);
+  --background-color: #190B26; */
+  /* --background-color: antiquewhite; */
 
-  
+  --background-color: #1b1b1b;
+  --accent-color: #f0f0f0;
+  --header-color: #e6e6e6;
+  --text-color: #a8a8a8;
+  --shader-color: rgb(107, 107, 107);
   background-color: var(--background-color);
 
   font-synthesis: none;
@@ -59,6 +62,10 @@ h4 {
   margin: 0px;
 }
 
+h5 {
+  font-size: calc(1vw + 12px);
+  color: var(--text-color);
+}
 
 .highlight {
   color: var(--accent-color);
@@ -119,7 +126,8 @@ p {
   }
 
   .logo{
-    width: 175px;
+    height: 30px;
+    margin-left: 12px;
   }
 
   .navBtn {
@@ -162,6 +170,7 @@ p {
   .section-content {
     /* background-color: antiquewhite; */
     padding: 24px;
+    margin-top: 45px;
   }
 
 #home {
@@ -185,14 +194,14 @@ p {
     z-index: -1;
   }
 
-  .heroFooter{
+  /* .heroFooter{
     z-index: -1;
     background: linear-gradient(to top, #190B26 15% , #190b2600 100%);
     width: 100vw;
     bottom: -10vh;
     height: 400px;
     position: absolute;
-  }
+  } */
 
   #home h2 {
     color: var(--shader-color);
@@ -240,8 +249,16 @@ p {
       flex-direction: column;
       gap: 24px;
       -ms-grid-row-span: -1/1;
-      z-index: -1;
     }
+
+      .link {
+        display: inline-flex;
+        height: 30px;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+        cursor: pointer;
+      }
 
       .tileImg {
         width: 100%;

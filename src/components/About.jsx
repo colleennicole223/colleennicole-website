@@ -22,7 +22,8 @@ const About = () => {
                 <div className='socialIcon'></div>
                 <div className='socialIcon'></div>
             </div> */}
-            <button className="linkSection">Contact Me</button>
+            <a href="#contact"><button className="linkSection">Contact Me</button></a>
+            
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import menu1 from '../button-menu-2.svg';
-import logo from '../icon-logo.svg';
+import logo1 from '../icon-logo-1.svg';
+import logo2 from '../icon-logo-2.svg';
 import close1 from '../button-close-1.svg';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -34,7 +35,7 @@ const Navigation = () => {
         <>
         <section className="navigation">
           {/* 🔗 conditional class, if navExpand is true then nav-links expand otherwise nav-links is closed */}
-          <img className='logo' src={logo} />
+          <img className='logo' src={logo2} />
           <div className={`navLinks ${navExpand ? 'expand' : ''}`}>
                 <a href="#home" onClick={closeNav}>Home</a>
                 <a href="#about" onClick={closeNav}>About</a>
