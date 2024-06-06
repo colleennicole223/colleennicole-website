@@ -60,11 +60,15 @@ h4 {
   font-weight: 800;
   color: var(--accent-color);
   margin: 0px;
+  padding: 4px 0px;
 }
 
 h5 {
   font-size: calc(1vw + 12px);
   color: var(--text-color);
+  font-weight: 500;
+  margin: 0;
+  padding: 8px 0px;
 }
 
 .highlight {
@@ -75,6 +79,12 @@ h5 {
 p {
   font-size: calc(1vw + 16px);
   color: var(--text-color);
+}
+
+li {
+  margin-top: 16px;
+  list-style-type: none;
+  padding: 0px;
 }
 
 .linkSection {
@@ -295,6 +305,9 @@ p {
             transition: background-color .5s ease;
           }
   
+
+
+          
   .tile:hover {
     /* transform: translateY(-5px); */
     transition: transform 0.5s ease; /* Add transition effect */
@@ -304,15 +317,40 @@ p {
   background-color: purple;
 } */
 
-  .dropdown {
-    background-color: orange;
-    border-radius: 10px; /* Adjust the value to control the roundness of the corners */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    transition: transform 0.3s ease; /* Add transition effect */
-    /* height: calc(2vw + 380px);
-    width: calc(2vw + 280px); */
-    width: 100%;
+  .experienceTiles {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 36px;
+  }
+
+  .experienceContainer{
+    /* border: var(--text-color) 2px solid;
+    padding: 8px;
+    border-radius: 16px; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .experienceTiles:hover .experienceHeader{
+    transition: 0.5s ; 
+    border: var(--accent-color) 2px solid;
+    color: var(--header-color);
+    
+  }
+
+  .expandTile{
+    /* background-color: bisque;
+    border: var(--text-color) 2px solid;
+    border-radius: 16px; */
+    padding: 8px;
+  }
+
+  .experienceHeader {
+    border: var(--shader-color) 2px solid;
+    padding: 16px;
+    border-radius: 24px;
   }
 
 /* #contact {
