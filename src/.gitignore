@@ -1,0 +1,6 @@
+
+# text comment
+*.png
+*.svg
+*.env
+*.env.local
