@@ -44,56 +44,56 @@ const Contact = () => {
     <section id="contact">
       <div className="section-content">
         <h2>Contact Me</h2>
-        <p>Let's get in touch if you have a potential opportunity, a collaboration idea, or just want to say hi! </p>
-        <form onSubmit={handleSubmit}>
-          <label>
-            <h5 className='highlight'>Name</h5>
-            <input 
-              type='text' 
-              name='name' 
-              className='input' 
-              placeholder='John' 
-              required 
-              value={form.name}
-              onChange={handleForm}
-            /> 
-          </label>
+        <p>Whether you have a potential opportunity or just want to say hi, lets get in touch! </p>
+          <form className='contactForm' onSubmit={handleSubmit}>
+            <label>
+              <h5 className='highlight'>Name</h5>
+              <input 
+                type='text' 
+                name='name' 
+                className='input' 
+                placeholder='John' 
+                required 
+                value={form.name}
+                onChange={handleForm}
+              /> 
+            </label>
 
-          <label>
-            <h5 className='highlight'>Email</h5>
-            <input 
-              type='email' 
-              name='email' 
-              className='input' 
-              placeholder='john@gmail.com' 
-              required 
-              value={form.email}
-              onChange={handleForm}
-            /> 
-          </label>
+            <label >
+              <h5 className='highlight'>Email</h5>
+              <input 
+                type='email' 
+                name='email' 
+                className='input' 
+                placeholder='john@gmail.com' 
+                required 
+                value={form.email}
+                onChange={handleForm}
+              /> 
+            </label>
 
-          <label>
-            <h5 className='highlight'>Message</h5>
-            <textarea 
-              name='message' 
-              rows={4}
-              className='textArea' 
-              placeholder='Message' 
-              required 
-              value={form.message}
-              onChange={handleForm}
-            /> 
-          </label>
-          
-          <button
-            type='submit'
-            className='btn'
-            disabled={isLoading}>
-          {isLoading ? 'Sending...' : 'Send Message'}
-          </button>
+            <label>
+              <h5 className='highlight'>Message</h5>
+              <textarea 
+                name='message' 
+                rows={4}
+                className='textArea' 
+                placeholder='Message' 
+                required 
+                value={form.message}
+                onChange={handleForm}
+              /> 
+            </label>
+            
+            <button
+              type='submit'
+              className='linkSection'
+              disabled={isLoading}>
+            {isLoading ? 'Sending...' : 'Send Message'}
+            </button>
 
-        </form>
-      </div>
+          </form>
+          </div>
     </section>
   )
 }

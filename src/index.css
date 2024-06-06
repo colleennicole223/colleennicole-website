@@ -357,6 +357,24 @@ li {
   background-color: aqua;
 } */
 
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+}
+  input,textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    font-size: 16px; 
+    max-width: 100%;
+    width: 92.5%;
+  }
+  #contact button{
+    width: fit-content;
+  }
+
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;
