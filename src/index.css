@@ -173,7 +173,7 @@ li {
     /* background-color: greenyellow; */
     display: flex;
     flex-direction: column;
-    gap: 98px;
+    gap: 28px;
     
   }
   
@@ -243,22 +243,24 @@ li {
 
   .projectTiles{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 64px;
     gap: 64px;
   }
     
     .tile {
       background-color: var(--background-color);
+      /* background-color: aqua; */
       border-radius: 20px; /* Adjust the value to control the roundness of the corners */
       padding: 24px;
       transition: transform 1.0s ease; /* Add transition effect */
-      padding: 16px;
+      padding: 0px;
       height: fit-content;
       display: flex;
       flex-direction: column;
       gap: 36px;
       /* -ms-grid-row-span: -1/1; */
+      text-decoration: none;
     }
 
       .link {
@@ -305,7 +307,24 @@ li {
             transition: background-color .5s ease;
           }
   
+  #writerGadget{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+    
+    /* display: none; */
+  }
 
+  #thymer{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+    /* display: none; */
+  }
 
           
   .tile:hover {
@@ -325,32 +344,37 @@ li {
   }
 
   .experienceContainer{
-    /* border: var(--text-color) 2px solid;
-    padding: 8px;
-    border-radius: 16px; */
     display: flex;
     flex-direction: column;
     gap: 16px;
+    border-radius: 24px;
   }
 
-  .experienceTiles:hover .experienceHeader{
+  .experienceContainerSelected{
     transition: 0.5s ; 
-    border: var(--accent-color) 2px solid;
-    color: var(--header-color);
-    
+    border: var(--accent-color) 1.5px solid;
+    border-radius: 24px;
+  }
+
+  .experienceContainerSelected .experienceHeader{
+    border: none;
+    border-radius: 24px;
   }
 
   .expandTile{
-    /* background-color: bisque;
-    border: var(--text-color) 2px solid;
-    border-radius: 16px; */
-    padding: 8px;
+    border: none;
+    padding: 0px 16px;
+    padding-bottom: 16px;
   }
 
   .experienceHeader {
     border: var(--shader-color) 2px solid;
     padding: 16px;
     border-radius: 24px;
+  }
+
+  #experience .link {
+    padding: 16px;
   }
 
 /* #contact {
@@ -361,6 +385,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 36px;
   
 }
   input,textarea {

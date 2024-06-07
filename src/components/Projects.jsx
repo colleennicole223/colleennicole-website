@@ -6,6 +6,14 @@ import project3 from '../th-2.png';
 import link from '../icon-link-1.svg';
 
 const Projects = () => {
+
+  const handleOpenNewTabWG = () => {
+    window.open('/WriterGadget');
+  };
+
+  const handleOpenNewTabTH = () => {
+    window.open('/Thymer');
+  };
   
   return (
     <section id="projects" >
@@ -14,9 +22,9 @@ const Projects = () => {
         <p>Welcome to the project section of my portfolio. Below is a collection of my most recent projects, each presenting unique challenges and showcase my ability to solve complex problems. </p>
         <div className="projectTiles">
           <div className="tile">
-            <img className="tileImg" src={project2} />
+            <img onClick={handleOpenNewTabWG} className="tileImg" src={project2} />
             <div className="tileContent">
-              <h4>Writer Gadget</h4>
+              <h4 id='writerGadgetTile'>Writer Gadget</h4>
               <p>
                 I am reworking the front end of Writers Gadget, a responsive application designed to plan, organize, and track story ideas. Utilizing  
                 <span className="highlight"> Figma </span> 
@@ -28,6 +36,9 @@ const Projects = () => {
                 <img  src={link} />
                 <h5 className='highlight'>Google Play</h5>
               </a>
+
+
+
               {/* <h5>Collaborating with the developers of Writer Gadget, a cross-platform writing application,
                 in implementing an intuitive and user-friendly interface. </h5> */}
               {/* <div className="projectSkill">
@@ -39,7 +50,7 @@ const Projects = () => {
           </div>
           
           <div className="tile">
-            <img className="tileImg" src={project3} />
+            <img onClick={handleOpenNewTabTH} className="tileImg" src={project3} />
             <div className="tileContent">
               <h4>Thymer</h4>
               <p>

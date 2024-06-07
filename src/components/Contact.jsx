@@ -44,7 +44,7 @@ const Contact = () => {
     <section id="contact">
       <div className="section-content">
         <h2>Contact Me</h2>
-        <p>Whether you have a potential opportunity or just want to say hi, lets get in touch! </p>
+        <p>Whether you have a potential opportunity or just want to say hi - lets get in touch! </p>
           <form className='contactForm' onSubmit={handleSubmit}>
             <label>
               <h5 className='highlight'>Name</h5>
@@ -78,7 +78,7 @@ const Contact = () => {
                 name='message' 
                 rows={4}
                 className='textArea' 
-                placeholder='Message' 
+                placeholder='...' 
                 required 
                 value={form.message}
                 onChange={handleForm}
