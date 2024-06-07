@@ -37,19 +37,19 @@ body{
 
 h1{
   color: var(--header-color);
-  font-size: calc(1vw + 42px);
+  font-size: calc(0.5vw + 42px);
   margin: 0px;
 }
 
 h2{
   color: var(--header-color);
-  font-size: calc(1vw + 32px);
+  font-size: calc(0.5vw + 32px);
   margin: 0px;
 }
 
 h3{
   color: var(--text-color);
-  font-size: calc(1vw + 18px);
+  font-size: calc(0.5vw + 18px);
   margin: 0px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -57,7 +57,7 @@ h3{
 }
 
 h4 {
-  font-size: calc(1vw + 18px);
+  font-size: calc(0.5vw + 18px);
   font-weight: 800;
   color: var(--accent-color);
   margin: 0px;
@@ -65,7 +65,7 @@ h4 {
 }
 
 h5 {
-  font-size: calc(1vw + 12px);
+  font-size: calc(0.5vw + 12px);
   color: var(--text-color);
   font-weight: 500;
   margin: 0;
@@ -78,7 +78,7 @@ h5 {
 }
 
 p {
-  font-size: calc(1vw + 16px);
+  font-size: calc(0.5vw + 16px);
   color: var(--text-color);
 }
 
@@ -176,6 +176,7 @@ li {
     /* background-color: greenyellow; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 28px;
     
   }
@@ -250,7 +251,7 @@ li {
 
   .projectTiles{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 600px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
     margin-top: 64px;
     gap: 64px;
     justify-content: center;
@@ -465,24 +466,24 @@ button:focus-visible {
  }
 
  @media (min-width: 600px) { 
-  .section-content {
-    /* padding: 75px 50px;  */
-    padding: 0px 50px;
-  }
   .navBtn {
     display: none;
   }
   .navLinks{
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
+    margin-right: 12px ;
   }
  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 1300px) { 
+@media (min-width: 1200px) { 
+  #sections {
+    gap: 120px;
+  }
+
   .section-content {
-    padding: 0px 0px;
-    width: 1250px;
+    width: 1200px;
   }
  }
 
@@ -499,4 +500,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-*/
+ */
