@@ -1,5 +1,5 @@
 import React from 'react'
-import project2 from '../wg-2.png';
+import project2 from '../wg-21.png';
 
 const WriterGadget = () => {
   return (

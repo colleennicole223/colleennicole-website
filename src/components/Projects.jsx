@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import project1 from '../wg-1.png';
-import project2 from '../wg-2.png';
-import project3 from '../th-2.png';
+import project2 from '../wg-21.png';
+import project3 from '../th-21.png';
 import link from '../icon-link-1.svg';
 
 const Projects = () => {

@@ -47,12 +47,13 @@ const Contact = () => {
         <p>Whether you have a potential opportunity or just want to say hi - lets get in touch! </p>
           <form className='contactForm' onSubmit={handleSubmit}>
             <label>
-              <h5 className='highlight'>Name</h5>
+              {/* <h5>Name</h5> */}
               <input 
                 type='text' 
                 name='name' 
                 className='input' 
-                placeholder='John' 
+                // placeholder='John' 
+                placeholder='Name' 
                 required 
                 value={form.name}
                 onChange={handleForm}
@@ -60,12 +61,13 @@ const Contact = () => {
             </label>
 
             <label >
-              <h5 className='highlight'>Email</h5>
+              {/* <h5>Email</h5> */}
               <input 
                 type='email' 
                 name='email' 
                 className='input' 
-                placeholder='john@gmail.com' 
+                // placeholder='john@gmail.com' 
+                placeholder='Email' 
                 required 
                 value={form.email}
                 onChange={handleForm}
@@ -73,7 +75,7 @@ const Contact = () => {
             </label>
 
             <label>
-              <h5 className='highlight'>Message</h5>
+              {/* <h5>Message</h5> */}
               <textarea 
                 name='message' 
                 rows={4}

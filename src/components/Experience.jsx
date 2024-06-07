@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import link from '../icon-link-1.svg';
-
+import up from '../icon-up-1.svg';
+import down from '../icon-down-1.svg';
 
 
 
@@ -86,10 +87,13 @@ const Experience = () => {
                     <div onClick={() => handleExperience(index)}>
                       <div className={experienceIndex === index ? "experienceContainerSelected" : "experienceContainer"}>
                         <div className="experienceHeader">
-                          <h4>{experience.title}</h4>
+                          <h4 className='experienceTopRow'>
+                              {experience.title}
+                              <img src={experienceIndex === index ? down : up}/>
+                          </h4>
                           <h5>{experience.role}</h5>
                           <h5>{experience.year}</h5>
-                          {/* {experienceIndex === index ? '-' : '+'} */}
+                          
                         </div>
                         {/* {experienceIndex === index && <h5 className="highlight">{experience.info}</h5>} */}
                         {experienceIndex === index &&  experience.expand === 1 ? (<div className='expandTile'>{experience.info.map((info, idx) => (<h5 key={idx}>{info}</h5>))}</div>) : null}

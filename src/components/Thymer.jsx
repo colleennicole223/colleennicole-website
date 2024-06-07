@@ -1,5 +1,5 @@
 import React from 'react'
-import project3 from '../th-2.png';
+import project3 from '../th-21.png';
 
 const Thymer = () => {
   return (

@@ -10,11 +10,11 @@
   --background-color: #190B26; */
   /* --background-color: antiquewhite; */
 
-  --background-color: #1b1b1b;
+  --background-color: #181818;
   --accent-color: #f0f0f0;
   --header-color: #e6e6e6;
   --text-color: #a8a8a8;
-  --shader-color: rgb(107, 107, 107);
+  --shader-color: rgb(34, 34, 34);
   background-color: var(--background-color);
 
   font-synthesis: none;
@@ -27,6 +27,7 @@
   font-weight: 400;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
 
 body{
   width: 100%;
@@ -94,11 +95,11 @@ li {
   border: 2px solid;
   border-radius: 20px; 
   text-align: center;
-  border-color: var(--header-color);
+  border-color: var(--text-color);
   background-color: var(--background-color);
   cursor:pointer;
   font-size: calc(1vw + 12px);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--header-color);
   margin-top: 12px;
   transition: background-color .5s ease;
@@ -116,16 +117,18 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: linear-gradient(to bottom, #130910 85% , #13091000 100%); */
-  background-color: var(--background-color);
-  top: 0px;
-  left: 0;
-  right: 0;
-  padding: 12px;
+  top: 16px;
+  left: 12px;
+  right: 12px;
+  padding: 0px 12px;
+  height: 60px;
   position: fixed;
+  border-radius: 30px;
   transition: ease 0.4s;
+  background-image:linear-gradient(to bottom right, rgba(34, 34, 34, 0.75), rgb(34, 34, 34));
+  backdrop-filter: blur(10px); 
   &--scrolled {
-    height: 40px;
+    height: 45x;
   }
 }
 
@@ -137,7 +140,7 @@ li {
 
   .logo{
     height: 30px;
-    margin-left: 12px;
+    /* margin-left: 12px; */
   }
 
   .navBtn {
@@ -193,6 +196,10 @@ li {
     text-align: center;
   }
 
+  .heroContent{
+    margin-top: 20vh;
+  }
+
   .backgroundVideo{
     position: absolute;
     top: 0;
@@ -243,18 +250,18 @@ li {
 
   .projectTiles{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 600px));
     margin-top: 64px;
     gap: 64px;
+    justify-content: center;
   }
     
     .tile {
-      background-color: var(--background-color);
+      background-color: var(--shader-color);
       /* background-color: aqua; */
       border-radius: 20px; /* Adjust the value to control the roundness of the corners */
-      padding: 24px;
+      padding: 16px;
       transition: transform 1.0s ease; /* Add transition effect */
-      padding: 0px;
       height: fit-content;
       display: flex;
       flex-direction: column;
@@ -270,6 +277,7 @@ li {
         gap: 6px;
         text-decoration: none;
         cursor: pointer;
+        padding-bottom: 16px;
       }
 
       .tileImg {
@@ -347,18 +355,28 @@ li {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    border-radius: 24px;
+    border-radius: 16px;
+    background-color: var(--shader-color);
   }
 
   .experienceContainerSelected{
     transition: 0.5s ; 
-    border: var(--accent-color) 1.5px solid;
-    border-radius: 24px;
+    /* border: var(--text-color) 1px solid; */
+    border-radius: 16px;
+    background-color: var(--shader-color);
   }
 
   .experienceContainerSelected .experienceHeader{
     border: none;
-    border-radius: 24px;
+    border-radius: 16px;
+    
+  }
+
+  .experienceTopRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
   }
 
   .expandTile{
@@ -368,9 +386,7 @@ li {
   }
 
   .experienceHeader {
-    border: var(--shader-color) 2px solid;
     padding: 16px;
-    border-radius: 24px;
   }
 
   #experience .link {
@@ -384,18 +400,21 @@ li {
 .contactForm{
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 36px;
   margin-top: 36px;
   
 }
   input,textarea {
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid var(--text-color);
+    border: none;
     font-size: 16px; 
     max-width: 100%;
     width: 92.5%;
+    background-color: var(--shader-color);
   }
+  
   #contact button{
     width: fit-content;
   }

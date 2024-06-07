@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import menu1 from '../button-menu-2.svg';
-import logo1 from '../icon-logo-1.svg';
 import logo2 from '../icon-logo-2.svg';
 import close1 from '../button-close-1.svg';
 import { gsap } from "gsap";
@@ -19,7 +18,7 @@ const Navigation = () => {
 
     // 🟢 From GSAP: to hide nav bar when scrolling down 
     const showAnim = gsap.from('.navigation', { 
-      yPercent: -100,
+      yPercent: -150,
       paused: true,
       duration: 0.2
     }).progress(1);
