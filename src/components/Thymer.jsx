@@ -1,12 +1,12 @@
 import React from 'react'
-import project3 from '../th-21.png';
+import thymer from '../th_dark.png';
 
 const Thymer = () => {
   return (
     <>
         <section id="thymer">
           <div className="section-content">
-          <img className="tileImg" src={project3} />
+          <img className="thImage" src={thymer} />
           </div>
         </section>
     </>

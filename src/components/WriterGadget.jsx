@@ -1,12 +1,12 @@
 import React from 'react'
-import project2 from '../wg-21.png';
+import writergadget from '../wg_dark.png';
 
 const WriterGadget = () => {
   return (
     <>
         <section id="writerGadget">
           <div className="section-content">
-          <img className="tileImg" src={project2} />
+          <img className="wgImage" src={writergadget} />
           </div>
         </section>
     </>

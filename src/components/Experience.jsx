@@ -89,7 +89,7 @@ const Experience = () => {
                         <div className="experienceHeader">
                           <h4 className='experienceTopRow'>
                               {experience.title}
-                              <img src={experienceIndex === index ? down : up}/>
+                              <img className={experienceIndex === index ? "symbolDown" : "symbolUp"} src={experienceIndex === index ? down : up}/>
                           </h4>
                           <h5>{experience.role}</h5>
                           <h5>{experience.year}</h5>
@@ -97,7 +97,7 @@ const Experience = () => {
                         </div>
                         {/* {experienceIndex === index && <h5 className="highlight">{experience.info}</h5>} */}
                         {experienceIndex === index &&  experience.expand === 1 ? (<div className='expandTile'>{experience.info.map((info, idx) => (<h5 key={idx}>{info}</h5>))}</div>) : null}
-                        {experienceIndex === index &&  experience.link != null ? (<a className="link" href={experience.link} target="_blank" rel="noopener noreferrer"><img  src={link} /><h5 className='highlight'>Website</h5></a>) : null}
+                        {experienceIndex === index &&  experience.link != null ? (<a className="link" href={experience.link} target="_blank" rel="noopener noreferrer"><img  className="symbolLink" src={link} /><h5 className='highlight'>Website</h5></a>) : null}
                       </div>
                     </div>
                 </div>

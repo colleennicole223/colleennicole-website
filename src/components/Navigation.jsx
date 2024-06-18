@@ -34,7 +34,7 @@ const Navigation = () => {
         <>
         <section className="navigation">
           {/* 🔗 conditional class, if navExpand is true then nav-links expand otherwise nav-links is closed */}
-          <img className='logo' src={logo2} />
+          <img className='logoNav' src={logo2} />
           <div className={`navLinks ${navExpand ? 'expand' : ''}`}>
                 <a href="#home" onClick={closeNav}>Home</a>
                 <a href="#about" onClick={closeNav}>About</a>

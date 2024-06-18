@@ -138,7 +138,7 @@ li {
     text-decoration: none;
   }
 
-  .logo{
+  .logoNav{
     height: 30px;
     /* margin-left: 12px; */
   }
@@ -281,7 +281,7 @@ li {
         padding-bottom: 16px;
       }
 
-      .tileImg {
+      .thImage, .wgImage {
         width: 100%;
         height: auto; 
         border-radius: 15px;
@@ -414,6 +414,7 @@ li {
     max-width: 100%;
     width: 92.5%;
     background-color: var(--shader-color);
+    color: var(--accent-color);
   }
   
   #contact button{
@@ -487,17 +488,51 @@ button:focus-visible {
   }
  }
 
-/*
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+  --background-color: #ffffff;
+  --accent-color: #2c2c2c;
+  --header-color: #414141;
+  --text-color: #707070;
+  --shader-color: rgb(235, 235, 235);
+
+  background-color: var(--background-color);
+  color: var(--text-color);
   }
-  a:hover {
-    color: #747bff;
+
+  .navigation{
+    background-image:linear-gradient(to bottom right, rgba(243, 243, 243, 0.60), rgb(209, 209, 209));
+    backdrop-filter: blur(7px); 
   }
-  button {
-    background-color: #f9f9f9;
+
+  .highlight {
+    font-weight: 700;
   }
+  
+  .wgImage {
+    content: url('wg_light.png');
+  }
+
+  .thImage {
+    content: url('th_light.png');
+  }
+  
+  .symbolLink {
+    content: url('icon-link-1-dark.svg');
+  }
+
+  .symbolUp {
+    content: url('icon-up-1-dark.svg');
+  }
+
+  .symbolDown {
+    content: url('icon-down-1-dark.svg');
+  }
+
+  .logoNav {
+    content: url('icon-logo-2-dark.svg');
+  }
+  
 }
- */
+

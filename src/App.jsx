@@ -38,8 +38,8 @@ function App() {
               <div id="sections">
                 <Navigation />  
                 <Hero  />
-                <About />
                 <Projects />
+                <About />
                 <Experience />
                 <Contact />
                 <Footer />
