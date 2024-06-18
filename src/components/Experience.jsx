@@ -16,26 +16,27 @@ const Experience = () => {
       title: "Georgia Institute of Technology",
       role: "M.S. Computer Science with a focus in Human-Computer Interactions",
       year: "Fall 2024 - 2028",
+      summary: "Summary: excited to start this upcoming fall 🍁",
       info: [""],
-      expand: 0,
       link: "https://catalog.gatech.edu/programs/computer-science-ms/",
     },
     {
       title: "Independent Contractor",
-      role: "Mechanical Engineer",
+      role: "Product Design Engineer",
       year: "2023 - 2024",
+      summary: "Summary: assisted an engineering company consisting of five people in the design and submission of a new product under rigorous deadlines ⏰",
       info: [ 
         "Redesigned a detachable sheet metal mechanism for an electric agricultural vehicle, enhancing its ability to withstand high loads and enabling autonomous pick-up and relocation",
         "Conducted in-depth kinematic linkage studies of multiple pneumatic actuators using Matlab, ensuring compliance with estimated load",
         "Optimized sheet metal geometry and thickness, achieving cost reduction while maintaining structural integrity ",
         "Created a detailed bill of materials, updated CAD models, and finalized drawing packages for the production of an off-road vehicle",
       ],
-      expand: 1,
     },
     {
       title: "DEKA Research & Development",
-      role: "Mechanical Engineer",
+      role: "Mechanical Engineer, Product Lead",
       year: "2021 - 2023",
+      summary: "Summary: product lead in the development of a medical device subsystem; addressed critical design flaws, reduced assembly time by 49%, and conducted test cases vital for FDA submission ⚕️",
       info: [ 
               "Managed workstream as Lead Engineer for one of the three subsystems of a disposable medical device",
               "Created CAD packages consisting of over 300 components and prepared models for both additive and subtractive manufacturing",
@@ -44,23 +45,27 @@ const Experience = () => {
               "Managed the workflow of four interns, ensuring their contributions met project milestones while supporting their individual goals",
               "Founded a companywide group that serves as a platform to discuss professional development and foster mentorship for entry-level engineers & managers",
             ],
-      expand: 1,
       link: "https://www.dekaresearch.com/"
     },
     {
       title: "Rose-Hulman Institute of Technology",
       role: "B.S. Mechanical Engineering with a minor in Robotics Engineering",
       year: "2017 - 2021",
+      summary: "Summary: my experience at Rose involved rigorous coursework, hands-on projects, and many late-night study sessions. I studied subjects across mechanisms, thermodynamics, control theory, and automation. For my capstone project, I collaborated with faculty & a small team to develop an apparatus to collect precise measurements within a wind tunnel 📖",
       info: [""],
-      expand: 0,
       link: "https://www.rose-hulman.edu/"
     },
     {
       title: "FIRST Robotics",
       role: "Alumni and Mentor",
       year: "2011 - Present",
-      info: [""],
-      expand: 0,
+      summary: "Summary: FIRST Robotics is an international high school robotics competition that aims to inspire students to pursue STEM careers 🤖",
+      info: [
+        "Actively volunteer at local competitions and occasionally mentor students from across the U.S.",
+        "President and mechanical lead of a competitive high school robotics team consisting of up to 25 members",
+        "Awarded Deans List Finalist four times for exemplary leadership in both FIRST Robotics Competition (FRC) and FIRST Tech Challenge (FTC)",
+        "Led team to FIRST World Championships during the 2014 and 2017 season",
+      ],
       link: "https://www.firstinspires.org/robotics/frc"
     }
   ];
@@ -98,8 +103,8 @@ const Experience = () => {
                           <h5>{experience.year}</h5>
                           
                         </div>
-                        {/* {experienceIndex === index && <h5 className="highlight">{experience.info}</h5>} */}
-                        {experienceIndex === index &&  experience.expand === 1 ? (<div className='expandTile'>{experience.info.map((info, idx) => (<h5 key={idx}>{info}</h5>))}</div>) : null}
+                        {experienceIndex === index &&  experience.summary != "" ? <h5 className="expandTile"><div className='highlight'>{experience.summary}</div></h5> : null}
+                        {experienceIndex === index &&  experience.info != "" ? (<div className='expandTile'>{experience.info.map((info, idx) => (<h5 key={idx}>{info}</h5>))}</div>) : null}
                         {experienceIndex === index &&  experience.link != null ? (<a className="link" href={experience.link} target="_blank" rel="noopener noreferrer"><img  className="symbolLink" src={link} /><h5 className='highlight'>Website</h5></a>) : null}
                       </div>
                     </div>
