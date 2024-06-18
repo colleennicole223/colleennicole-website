@@ -531,6 +531,15 @@ button:focus-visible {
     content: url('icon-down-1-dark.svg');
   }
 
+  .symbolMenu {
+    content: url('button-menu-2-dark.svg');
+  }
+
+  .symbolClose {
+    content: url('button-close-1-dark.svg');
+    
+  }
+
   .logoNav {
     content: url('icon-logo-2-dark.svg');
   }

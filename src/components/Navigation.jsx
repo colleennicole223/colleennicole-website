@@ -45,7 +45,7 @@ const Navigation = () => {
 
           <button className="navBtn" onClick={expandNav}>
             {/* ❌ conditional class, shows either the menu button of the close button  */}
-            <img src={navExpand ? close1 : menu1} />
+            <img className={navExpand ? "symbolClose" : "symbolMenu"} src={navExpand ? close1 : menu1} />
           </button>
         </section>
         </>
