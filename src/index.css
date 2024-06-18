@@ -317,13 +317,18 @@ li {
           }
   
   #writerGadget{
-    top: 0;
+    top: -50;
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: var(--background-color);
-    
-    /* display: none; */
+    background-color: var(--shader-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  #writerGadget .section-content{
+    margin-top: 0;
+    max-width: 800px;
   }
 
   #thymer{
@@ -331,8 +336,14 @@ li {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: var(--background-color);
-    /* display: none; */
+    background-color: var(--shader-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  #thymer .section-content{
+    margin-top: 0;
+    max-width: 800px;
   }
 
           
@@ -543,6 +554,7 @@ button:focus-visible {
   .logoNav {
     content: url('icon-logo-2-dark.svg');
   }
+
   
 }
 
