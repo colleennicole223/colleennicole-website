@@ -2,6 +2,7 @@ import { useState } from 'react'
 import link from '../icon-link-1.svg';
 import up from '../icon-up-1.svg';
 import down from '../icon-down-1.svg';
+import resume from '../cFulton.pdf';
 
 
 
@@ -78,6 +79,8 @@ const Experience = () => {
           <span className="highlight"> I'm on the lookout for the perfect full-time role to launch my career in software </span> 
           – could it be with you?
         </p>
+
+        <a href={resume} download="cFulton.pdf"><button className="linkSection">Resume</button></a>
 
         <div>
             {experiences.map((experience, index) => (
