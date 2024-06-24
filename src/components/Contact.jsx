@@ -15,7 +15,6 @@ const Contact = () => {
   const handleSubmit =(event) => {
     event.preventDefault();
     setIsLoading(true);
-    // console.log(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID)
     emailjs.send(
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -47,12 +46,10 @@ const Contact = () => {
         <p>Whether you have a potential opportunity or just want to say hi - lets get in touch! </p>
           <form className='contactForm' onSubmit={handleSubmit}>
             <label>
-              {/* <h5>Name</h5> */}
               <input 
                 type='text' 
                 name='name' 
                 className='input' 
-                // placeholder='John' 
                 placeholder='Name' 
                 required 
                 value={form.name}
@@ -61,12 +58,10 @@ const Contact = () => {
             </label>
 
             <label >
-              {/* <h5>Email</h5> */}
               <input 
                 type='email' 
                 name='email' 
                 className='input' 
-                // placeholder='john@gmail.com' 
                 placeholder='Email' 
                 required 
                 value={form.email}
@@ -75,7 +70,6 @@ const Contact = () => {
             </label>
 
             <label>
-              {/* <h5>Message</h5> */}
               <textarea 
                 name='message' 
                 rows={4}

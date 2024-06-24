@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import link from '../icon-link-1.svg';
-import up from '../icon-up-1.svg';
-import down from '../icon-down-1.svg';
-import resume from '../cFulton.pdf';
-
-
+import link from '/public/icon-link-1.svg';
+import up from '/public/icon-up-1.svg';
+import down from '/public/icon-down-1.svg';
+import resume from '/public/documents/cFulton.pdf';
 
 const Experience = () => {
 

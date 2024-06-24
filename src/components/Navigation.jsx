@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import menu1 from '../button-menu-2.svg';
-import logo2 from '../icon-logo-2.svg';
-import close1 from '../button-close-1.svg';
+import menu1 from '/public/button-menu-2.svg';
+import logo2 from '/public/icon-logo-2.svg';
+import close1 from '/public/button-close-1.svg';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -29,10 +29,11 @@ const Navigation = () => {
         self.direction === -1 ? showAnim.play() : showAnim.reverse()
       }
     });
+    ScrollTrigger.refresh();
 
     return (
         <>
-        <section className="navigation">
+        <section className="navigation" >
           {/* 🔗 conditional class, if navExpand is true then nav-links expand otherwise nav-links is closed */}
           <img className='logoNav' src={logo2} />
           <div className={`navLinks ${navExpand ? 'expand' : ''}`}>

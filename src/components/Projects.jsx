@@ -1,8 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
-import writergadget from '../wg_dark.png';
-import thymer from '../th_dark.png';
-import link from '../icon-link-1.svg';
+import writergadget from '/public/images/wg_dark.png';
+import thymer from '/public/images/th_dark.png';
+import link from '/public/icon-link-1.svg';
 
 const Projects = () => {
 
@@ -39,15 +38,6 @@ const Projects = () => {
                 <img  className="symbolLink" src={link} />
                 <h5 className='highlight'>Apple Store</h5>
               </a>
-
-
-
-              {/* <h5>Collaborating with the developers of Writer Gadget, a cross-platform writing application,
-                in implementing an intuitive and user-friendly interface. </h5> */}
-              {/* <div className="projectSkill">
-                <button className="skill">Figma</button>
-                <button className="skill">Flutter</button>
-              </div> */}
             </div>
             
           </div>
@@ -64,13 +54,6 @@ const Projects = () => {
                 and 
                 <span className="highlight"> Node.js </span>. 
               </p>
-              {/* <h5>Developing a productivity application aimed to help users manage their tasks, set goals, and 
-                track progress efficiently. </h5> */}
-              {/* <div className="projectSkill">
-                <button className="skill">Figma</button>
-                <button className="skill">React</button>
-                <button className="skill">GSAP</button>
-              </div> */}
             </div>
           </div>
         </div>

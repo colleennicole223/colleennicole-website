@@ -1,5 +1,5 @@
 import React from 'react'
-import writergadget from '../wg_dark.png';
+import writergadget from '/public/images/wg_dark.png';
 
 const WriterGadget = () => {
   return (

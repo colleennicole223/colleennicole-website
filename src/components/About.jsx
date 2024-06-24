@@ -17,11 +17,6 @@ const About = () => {
             <p>
             Outside of the professional world, I enjoy outdoor activities with my dogs, digital art, 3D modeling, and video games. Thank you for taking the time to explore my portfolio. Do you have an opportunity in mind or just want to say hi? 
             </p>
-            {/* <div className='socialIcons'>
-                <div className='socialIcon'></div>
-                <div className='socialIcon'></div>
-                <div className='socialIcon'></div>
-            </div> */}
             <a href="#contact"><button className="linkSection">Contact Me</button></a>
             
         </div>

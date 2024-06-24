@@ -18,25 +18,16 @@ import Thymer from './components/Thymer';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-
-  useEffect(() => {
-    //will place GSAP in here 
-    
-  }, []); // Empty dependency array ensures the effect runs only once on mount **CHECK THIS**
-
-
+  
   return (
     <>
-
     <div>
-      
     </div>
-
       <Router>
         <Routes>
           <Route path='/' element={
               <div id="sections">
-                <Navigation />  
+                <Navigation/>  
                 <Hero  />
                 <Projects />
                 <About />
@@ -50,12 +41,6 @@ function App() {
         </Routes>
       </Router>       
         
-
-        {/* <h1>Heading 1, One</h1>
-        <h2>Heading 2, Two</h2>
-        <h3>Heading 3, Three</h3>
-        <h4>Heading 4, Four</h4>
-        <p>Paragraph, <span className='highlight'>because</span> I have a lot to say</p> */}
     </>
   )
 }
