@@ -10,15 +10,15 @@ const Hero = () => {
     <section id="home">
         <div className='section-content'>
           <div></div>
-          {/* <h2>Hello, my name is</h2>
-          <h1>Colleen</h1> */}
+          <h1>COLLEEN</h1>
+          <h1>FULTON</h1>
           
           <Spline 
-            scene={color === "dark" ? "https://prod.spline.design/fXLZ73mK6pTQAzB5/scene.splinecode" : "https://prod.spline.design/vy39nqah9k40oSvF/scene.splinecode"} 
+            scene={color === "dark" ? "https://prod.spline.design/2OJTcEHcxFIuNNt1/scene.splinecode" : "https://prod.spline.design/kvpHO2CoNhBLwFhh/scene.splinecode"} 
             onLoad={(spline) => {
               if(window.innerWidth<1200){
-                spline.setZoom(window.innerWidth/400); }else{
-                  spline.setZoom(2)
+                spline.setZoom(window.innerWidth/600); }else{
+                  spline.setZoom(1)
                 }
             }}
             />
