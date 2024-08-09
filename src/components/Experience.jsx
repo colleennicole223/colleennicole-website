@@ -83,7 +83,7 @@ const Experience = () => {
           – could it be with you?
         </p>
 
-        <a href={resume} download="cFulton.pdf"><button className="linkSection">Resume</button></a>
+        {/* <a href={resume} download="cFulton.pdf"><button className="linkSection">Resume</button></a> */}
 
         <div>
             {experiences.map((experience, index) => (
