@@ -14,7 +14,7 @@ const Experience = () => {
       title: "Georgia Institute of Technology",
       role: "M.S. Computer Science with a focus in Human-Computer Interactions",
       year: "Fall 2024 - 2028",
-      summary: "Summary: excited to start this upcoming fall 🍁",
+      summary: "Summary: Taking CS 6310: Software Architecture and Design where I am learning the principles involved with the analysis and design of large software systems 🔧",
       info: [""],
       link: "https://catalog.gatech.edu/programs/computer-science-ms/",
     },

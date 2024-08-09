@@ -1,10 +1,11 @@
 
 :root {
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
 
   --background-color: #181818;
   --accent-color: #f0f0f0;
   --crazy-color: #f0f0f0;
+  --title-color: #acacac42;
   --header-color: #e6e6e6;
   --text-color: #a8a8a8;
   --shader-color: rgb(34, 34, 34);
@@ -30,8 +31,8 @@ body{
 }
 
 h1{
-  color: var(--header-color);
-  font-size: calc(3vw + 56px);
+  color: var(--title-color);
+  font-size: calc(3vw + 64px);
   margin: 0px;
   padding: 0px 0px;
   /* font-family: var(--header-font); */
@@ -185,7 +186,7 @@ li {
   }
 
 #home {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -256,7 +257,7 @@ li {
         padding-bottom: 16px;
       }
 
-      .thImage, .wgImage {
+      .thImage, .wgImage, .pxImage{
         width: 100%;
         height: auto; 
         border-radius: 15px;

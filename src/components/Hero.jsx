@@ -10,8 +10,8 @@ const Hero = () => {
     <section id="home">
         <div className='section-content'>
           <div></div>
-          <h1>COLLEEN</h1>
-          <h1>FULTON</h1>
+          <h1>C O L L E E N</h1>
+          <h1>F U L T O N</h1>
           
           <Spline 
             scene={color === "dark" ? "https://prod.spline.design/2OJTcEHcxFIuNNt1/scene.splinecode" : "https://prod.spline.design/kvpHO2CoNhBLwFhh/scene.splinecode"} 

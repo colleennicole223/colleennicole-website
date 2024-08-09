@@ -1,16 +1,22 @@
 import React from 'react'
 import writergadget from '/public/images/wg_dark.png';
 import thymer from '/public/images/th_dark.png';
+import pixel from '/public/images/px_dark.jpeg';
 import link from '/public/icon-link-1.svg';
 
 const Projects = () => {
 
   const handleOpenNewTabWG = () => {
-    window.open('/WriterGadget');
+    // window.open('/WriterGadget');
+    window.open('https://apps.apple.com/us/app/writer-gadget/id1621085053');
   };
 
   const handleOpenNewTabTH = () => {
     window.open('/Thymer');
+  };
+
+  const handleOpenNewTabPX = () => {
+    window.open('https://colleennicole223.github.io/odin-etch-a-sketch/');
   };
   
   return (
@@ -39,11 +45,12 @@ const Projects = () => {
                 <h5 className='highlight'>Apple Store</h5>
               </a>
             </div>
-            
           </div>
+
+          
           
           <div className="tile">
-            <img onClick={handleOpenNewTabTH} className="thImage" src={thymer} />
+            <img className="thImage" src={thymer} />
             <div className="tileContent">
               <h4>Thymer</h4>
               <p>
@@ -53,6 +60,23 @@ const Projects = () => {
                 <span className="highlight"> React </span> 
                 and 
                 <span className="highlight"> Node.js </span>. 
+              </p>
+            </div>
+            
+          </div>
+
+          <div className="tile">
+            <img onClick={handleOpenNewTabPX} className="pxImage" src={pixel} />
+            <div className="tileContent">
+              <h4>Pixel Art</h4>
+              <p>
+                Created a pixel art sketch pad using  
+                <span className="highlight"> HTML</span> 
+                ,
+                <span className="highlight"> CSS</span> 
+                , and 
+                <span className="highlight"> JavaScript</span> 
+                . 
               </p>
             </div>
           </div>
