@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import writergadget from '/public/images/wg_dark.png';
 import thymer from '/public/images/th_dark.png';
 import pixel from '/public/images/px_dark.jpeg';
+import landing from '/public/images/lp_light.png';
 import link from '/public/icon-link-1.svg';
 
 
@@ -20,9 +21,14 @@ const Projects = () => {
     window.open('https://colleennicole223.github.io/odin-etch-a-sketch/');
   };
 
+  const handleOpenNewTabLP = () => {
+    window.open('https://colleennicole223.github.io/odin-sign-up-form/');
+  };
+
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
+
   
   
   return (
@@ -86,8 +92,34 @@ const Projects = () => {
                 <span className="highlight"> JavaScript</span> 
                 . 
               </p>
+              <a className="link" href="https://github.com/colleennicole223/odin-etch-a-sketch" target="_blank" rel="noopener noreferrer">
+                <img  className="symbolLink" src={link} />
+                <h5 className='highlight'>GitHub</h5>
+              </a>
             </div>
           </div>
+
+          <div className="tile">
+            <img onClick={handleOpenNewTabLP} className="lpImage" src={landing} />
+            <div className="tileContent">
+              <h4>Sign-up Form</h4>
+              <p>
+                Drafted a sign-up page using
+                <span className="highlight"> HTML</span> 
+                ,
+                <span className="highlight"> CSS</span> 
+                , and 
+                <span className="highlight"> JavaScript </span> 
+                for an academic project submission.
+              </p>
+              <a className="link" href="https://github.com/colleennicole223/odin-sign-up-form" target="_blank" rel="noopener noreferrer">
+                <img  className="symbolLink" src={link} />
+                <h5 className='highlight'>GitHub</h5>
+              </a>
+            </div>
+          </div>
+
+          
         </div>
       </div>
     </section>

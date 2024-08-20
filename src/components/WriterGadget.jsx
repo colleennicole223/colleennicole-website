@@ -52,7 +52,7 @@ const WriterGadget = () => {
               Moving forward, the priority will be expanding and refining the high-fidelity prototypes in 
               preparation for a usability test with local writers. </p>
 
-              <HashLink smooth to='/#projects' > 
+              <HashLink to='/#projects' > 
                 <button className="linkSection">Back to Projects</button>
               </HashLink>
 
