@@ -1,16 +1,16 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import writergadget from '/public/images/wg_dark.png';
 import thymer from '/public/images/th_dark.png';
 import pixel from '/public/images/px_dark.jpeg';
 import link from '/public/icon-link-1.svg';
 
+
 const Projects = () => {
 
   const handleOpenNewTabWG = () => {
-    window.open('/WriterGadget');
+    // window.open('/WriterGadget');
   };
-
-  
   
   const handleOpenNewTabTH = () => {
     window.open('/Thymer');
@@ -19,6 +19,11 @@ const Projects = () => {
   const handleOpenNewTabPX = () => {
     window.open('https://colleennicole223.github.io/odin-etch-a-sketch/');
   };
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+  }
+  
   
   return (
     <section id="projects" >
@@ -27,7 +32,9 @@ const Projects = () => {
         <p>Welcome to the project section of my portfolio. Below is a collection of my most recent projects, each presenting unique challenges and showcase my ability to solve complex problems. </p>
         <div className="projectTiles">
           <div className="tile">
-            <img onClick={handleOpenNewTabWG} className="wgImage" src={writergadget} />
+            <Link onClick={scrollToTop} to="./WriterGadget">
+              <img onClick={handleOpenNewTabWG} className="wgImage" src={writergadget} />
+            </Link>
             <div className="tileContent">
               <h4 id='writerGadgetTile'>Writer Gadget</h4>
               <p>

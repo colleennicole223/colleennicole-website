@@ -1,4 +1,6 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link';
+
 
 const About = () => {
   
@@ -17,8 +19,9 @@ const About = () => {
             <p>
             Outside of the professional world, I enjoy outdoor activities with my dogs, digital art, 3D modeling, and video games. Thank you for taking the time to explore my portfolio. Do you have an opportunity in mind or just want to say hi? 
             </p>
-            <a href="#contact"><button className="linkSection">Contact Me</button></a>
-            
+            <HashLink smooth to='/#contact' > 
+              <button className="linkSection">Contact Me</button>
+            </HashLink>
         </div>
       </div>
     </section>
