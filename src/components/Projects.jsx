@@ -7,10 +7,11 @@ import link from '/public/icon-link-1.svg';
 const Projects = () => {
 
   const handleOpenNewTabWG = () => {
-    // window.open('/WriterGadget');
-    window.open('https://apps.apple.com/us/app/writer-gadget/id1621085053');
+    window.open('/WriterGadget');
   };
 
+  
+  
   const handleOpenNewTabTH = () => {
     window.open('/Thymer');
   };
