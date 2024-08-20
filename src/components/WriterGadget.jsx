@@ -34,7 +34,7 @@ const WriterGadget = () => {
               crucial to ensure that the interface did not distract or hinder their creative process. 
               Striking this balance required careful consideration of both functionality and user experience
               to create an environment that enhancing writing rather than overwhelms. </p>
-            <img className="wgImage" src={writergadgetP} />
+            <img className="wgProtoImage" src={writergadgetP} />
             
             <h2>High Fidelity Prototype</h2>
             <p>I am actively developing high-fidelity prototypes to provide a more realistic representation 
@@ -45,7 +45,7 @@ const WriterGadget = () => {
                   <img  className="symbolLink" src={link} />
                   <h5 className='highlight'>Figma Preview</h5>
                 </a>
-            <img className="wgImage" src={writergadgetHF} />
+            <img className="wgHighImage" src={writergadgetHF} />
             
             <h2>Upcoming</h2>
             <p>There is much more to be done and I look forward to my ongoing collaboration with Writer Gadget. 
