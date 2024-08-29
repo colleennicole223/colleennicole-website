@@ -78,8 +78,8 @@ const Experience = () => {
       <div className="section-content">
         <h2>Professional Experience</h2>
         <p>
-          Welcome to my career journey, where I've recently jumped from the world of mechanical engineering to the realm of computer science!
-          <span className="highlight"> I'm on the lookout for the perfect full-time role to launch my career in software </span> 
+          Welcome to my career journey, I am
+          <span className="highlight"> actively searching for a full-time role </span>
           – could it be with you?
         </p>
 
