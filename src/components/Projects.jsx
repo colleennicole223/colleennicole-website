@@ -21,10 +21,6 @@ const Projects = () => {
     window.open('https://colleennicole223.github.io/odin-etch-a-sketch/');
   };
 
-  const handleOpenNewTabLP = () => {
-    window.open('https://colleennicole223.github.io/odin-sign-up-form/');
-  };
-
   const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
@@ -93,26 +89,6 @@ const Projects = () => {
                 . 
               </p>
               <a className="link" href="https://github.com/colleennicole223/odin-etch-a-sketch" target="_blank" rel="noopener noreferrer">
-                <img  className="symbolLink" src={link} />
-                <h5 className='highlight'>GitHub</h5>
-              </a>
-            </div>
-          </div>
-
-          <div className="tile">
-            <img onClick={handleOpenNewTabLP} className="lpImage" src={landing} />
-            <div className="tileContent">
-              <h4>Sign-up Form</h4>
-              <p>
-                Drafted a sign-up page using
-                <span className="highlight"> HTML</span> 
-                ,
-                <span className="highlight"> CSS</span> 
-                , and 
-                <span className="highlight"> JavaScript </span> 
-                for an academic project submission.
-              </p>
-              <a className="link" href="https://github.com/colleennicole223/odin-sign-up-form" target="_blank" rel="noopener noreferrer">
                 <img  className="symbolLink" src={link} />
                 <h5 className='highlight'>GitHub</h5>
               </a>
