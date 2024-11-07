@@ -14,15 +14,15 @@ const Experience = () => {
       title: "Georgia Institute of Technology",
       role: "M.S. Computer Science with a focus in Human-Computer Interactions",
       year: "Fall 2024 - 2028",
-      summary: "Summary: Taking CS 6310: Software Architecture and Design where I am learning the principles involved with the analysis and design of large software systems 🔧",
-      info: [""],
+      summary: "",
+      info: ["Currently taking CS6750 Human-Computer Interaction where I am exploring how interfaces help users to complete a task and how to validate design decisions based on user investigation."],
       link: "https://catalog.gatech.edu/programs/computer-science-ms/",
     },
     {
       title: "Independent Contractor",
       role: "Product Design Engineer",
       year: "2023 - 2024",
-      summary: "Summary: assisted an engineering company consisting of five people in the design and submission of a new product under rigorous deadlines ⏰",
+      summary: "Summary: assisted an engineering company consisting of five people in the design and submission of a new product under rigorous deadlines",
       info: [ 
         "Redesigned a detachable sheet metal mechanism for an electric agricultural vehicle, enhancing its ability to withstand high loads and enabling autonomous pick-up and relocation",
         "Conducted in-depth kinematic linkage studies of multiple pneumatic actuators using Matlab, ensuring compliance with estimated load",
@@ -34,7 +34,7 @@ const Experience = () => {
       title: "DEKA Research & Development",
       role: "Mechanical Engineer, Product Lead",
       year: "2021 - 2023",
-      summary: "Summary: product lead in the development of a medical device subsystem; addressed critical design flaws, reduced assembly time by 49%, and conducted test cases vital for FDA submission ⚕️",
+      summary: "Summary: product lead in the development of a medical device subsystem; addressed critical design flaws, reduced assembly time by 49%, and conducted test cases vital for FDA submission",
       info: [ 
               "Managed workstream as Lead Engineer for one of the three subsystems of a disposable medical device",
               "Created CAD packages consisting of over 300 components and prepared models for both additive and subtractive manufacturing",
@@ -49,8 +49,8 @@ const Experience = () => {
       title: "Rose-Hulman Institute of Technology",
       role: "B.S. Mechanical Engineering with a minor in Robotics Engineering",
       year: "2017 - 2021",
-      summary: "Summary: my experience at Rose involved rigorous coursework, hands-on projects, and many late-night study sessions. I studied subjects across mechanisms, thermodynamics, control theory, and automation. For my capstone project, I collaborated with faculty & a small team to develop an apparatus to collect precise measurements within a wind tunnel 📖",
-      info: [""],
+      summary: "",
+      info: ["My experience at Rose involved rigorous coursework, hands-on projects, and many late-night study sessions. I studied subjects across mechanisms, thermodynamics, control theory, and automation. For my capstone project, I collaborated with faculty & a small team to develop an apparatus to collect precise measurements within a wind tunnel"],
       link: "https://www.rose-hulman.edu/"
     },
     {
