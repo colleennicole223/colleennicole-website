@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import writergadget from '/public/images/wg_dark.png';
+import google from '/public/images/HCIg_dark.png';
 import thymer from '/public/images/th_dark.png';
 import pixel from '/public/images/px_dark.jpeg';
 import landing from '/public/images/lp_light.png';
@@ -33,6 +34,19 @@ const Projects = () => {
         <h2>Projects</h2>
         <p>Welcome to the project section of my portfolio. Below is a collection of my most recent projects, each presenting unique challenges and showcase my ability to solve complex problems. </p>
         <div className="projectTiles">
+
+        <div className="tile">
+            <img className="thImage" src={google} />
+            <div className="tileContent">
+              <h4 id='writerGadgetTile'>HCI Google Calendar Redesign</h4>
+              <p>
+              Individual project for a Human-Computer Interaction course. Researched how people manage events within the Google Calendar mobile application to inform a new design alternative.  Conducted needfinding with active users to better understand existing interaction with interface. Analyzed qualitative and quantitative feedback to inform a medium fidelity prototype mocked with 
+              <span className="highlight"> Figma</span>.
+              </p>
+            </div>
+          </div>
+
+
           <div className="tile">
             <Link onClick={scrollToTop} to="./WriterGadget">
               <img onClick={handleOpenNewTabWG} className="wgImage" src={writergadget} />
@@ -69,7 +83,7 @@ const Projects = () => {
                 and is projected to be built with 
                 <span className="highlight"> React </span> 
                 and 
-                <span className="highlight"> Node.js </span>. 
+                <span className="highlight"> Node.js</span>. 
               </p>
             </div>
             
