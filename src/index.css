@@ -257,7 +257,7 @@ li {
         padding-bottom: 16px;
       }
 
-      .thImage, .wgImage, .pxImage, .lpImage, .wgProtoImage, .wgHighImage{
+      .thImage, .wgImage, .pxImage, .HCIgImage, .lpImage, .wgProtoImage, .wgHighImage{
         width: 100%;
         height: auto; 
         border-radius: 15px;
@@ -474,10 +474,14 @@ li {
   .wgImage {
     content: url('/public/images/wg_light.png');
   }
-  
 
   .thImage {
     content: url('/public/images/th_light.png');
+  }
+  
+
+  .HCIgImage {
+    content: url('/public/images/HCIg_light.png');
   }
   
   .symbolLink {
