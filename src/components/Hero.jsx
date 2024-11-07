@@ -17,7 +17,7 @@ const Hero = () => {
             scene={color === "dark" ? "https://prod.spline.design/2OJTcEHcxFIuNNt1/scene.splinecode" : "https://prod.spline.design/kvpHO2CoNhBLwFhh/scene.splinecode"} 
             onLoad={(spline) => {
               if(window.innerWidth<1200){
-                spline.setZoom(window.innerWidth/600); }else{
+                spline.setZoom(window.innerWidth/1000); }else{
                   spline.setZoom(1)
                 }
             }}

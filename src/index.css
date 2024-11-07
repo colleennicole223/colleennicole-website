@@ -180,7 +180,7 @@ li {
   }
   
   .section-content {
-    padding: 24px;
+    padding: 36px;
     margin-top: 90px;
     
   }
@@ -227,7 +227,7 @@ li {
 
   .projectTiles{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
     margin-top: 64px;
     gap: 64px;
     justify-content: center;
@@ -352,14 +352,14 @@ li {
     gap: 16px;
     border-radius: 16px;
     background-color: var(--shader-color);
-    
+    width: 100%;
   }
 
   .experienceContainerSelected{
     transition: 0.5s ; 
     border-radius: 16px;
     background-color: var(--shader-color);
-    
+    width: 100%;
   }
 
   .experienceContainerSelected .experienceHeader{
@@ -395,6 +395,7 @@ li {
   gap: 36px;
   margin-top: 36px;
   
+  
 }
   input,textarea {
     padding: 12px;
@@ -423,8 +424,19 @@ li {
   }
  }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 1200px) { 
+/* Medium devices (desktops, 800px and up) */
+@media (min-width: 1000px) { 
+  #sections {
+    gap: 100px;
+  }
+
+  .section-content {
+    width: 900px;
+  }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 1300px) { 
   #sections {
     gap: 120px;
   }
@@ -433,6 +445,8 @@ li {
     width: 1200px;
   }
  }
+
+
 
 
 @media (prefers-color-scheme: light) {
