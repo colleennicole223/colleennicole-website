@@ -40,7 +40,7 @@ const Projects = () => {
             <div className="tileContent">
               <h4 id='HCIgoogleTile'>HCI Google Calendar Redesign</h4>
               <p>
-              Individual project for a Human-Computer Interaction course. Researched how people manage events within the Google Calendar mobile application to inform a new design alternative.  Conducted needfinding with active users to better understand existing interaction with interface. Analyzed qualitative and quantitative feedback to inform a medium fidelity prototype mocked with 
+              Individual project for a Human-Computer Interaction course. Researched how people manage events within the Google Calendar mobile application to inform new design alternatives.  Conducted needfinding with active users to better understand the interaction with the original interface. Analyzed qualitative and quantitative feedback to inform a medium-fidelity prototype mocked with
               <span className="highlight"> Figma</span>.
               </p>
             </div>

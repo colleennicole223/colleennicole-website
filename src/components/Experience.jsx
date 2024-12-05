@@ -13,14 +13,14 @@ const Experience = () => {
     {
       title: "Georgia Institute of Technology",
       role: "M.S. Computer Science with a focus in Human-Computer Interactions",
-      year: "Fall 2024 - 2028",
+      year: "2024 - 2026",
       summary: "",
-      info: ["Currently taking CS6750 Human-Computer Interaction where I am exploring how interfaces help users to complete a task and how to validate design decisions based on user investigation."],
+      info: ["I recently completed CS 6750 Human-Computer Interaction, exploring how interfaces can help users complete a task and how to validate design decisions based on user investigation. In the upcoming semester, I am taking CS 6300 Software Development Process to learn techniques for designing and maintaining software for actual product development. I will also take CS 6440 Health Informatics to explore a project idea involving fitness wearables."],
       link: "https://catalog.gatech.edu/programs/computer-science-ms/",
     },
     {
-      title: "Independent Contractor",
-      role: "Product Design Engineer",
+      title: "Ring-Co",
+      role: "Product Design Engineer Freelancer",
       year: "2023 - 2024",
       summary: "Summary: assisted an engineering company consisting of five people in the design and submission of a new product under rigorous deadlines",
       info: [ 
@@ -78,9 +78,7 @@ const Experience = () => {
       <div className="section-content">
         <h2>Professional Experience</h2>
         <p>
-          Welcome to my career journey, I am
-          <span className="highlight"> actively searching for a full-time role </span>
-          – could it be with you?
+        I have worked on some fascinating projects alongside amazing professionals over the last few years. Recently I have stepped outside of the world of mechanical engineering to explore computer science and product design.
         </p>
 
         {/* <a href={resume} download="cFulton.pdf"><button className="linkSection">Resume</button></a> */}
