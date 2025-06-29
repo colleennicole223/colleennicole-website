@@ -32,7 +32,7 @@ const Projects = () => {
     <section id="projects" >
       <div className="section-content">
         <h2>Projects</h2>
-        <p>Welcome to the project section of my portfolio. Below is a collection of some recent digital design projects. Feel free to reach out and ask me about my physical product design as well, these projects are not currently captured in my porfolio. </p>
+        <p>Welcome to the project section of my portfolio. Below is a collection of some recent digital designs. Feel free to reach out and ask me about my physical product designs as well, these projects are not currently captured in my porfolio. </p>
         <div className="projectTiles">
 
         <div className="tile">
