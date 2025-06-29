@@ -11,6 +11,13 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "Autodesk Robotics Lab",
+      role: "Robotics Interface Intern",
+      year: "2025",
+      summary: "",
+      info: ["Actively developing an application to explore cutting-edge research in human-robot interaction. Growing across hardware, software, and design with an amazing team of researchers. "],
+    },
+    {
       title: "Georgia Institute of Technology",
       role: "M.S. Computer Science with a focus in Human-Computer Interactions",
       year: "2024 - 2026",
@@ -78,7 +85,7 @@ const Experience = () => {
       <div className="section-content">
         <h2>Professional Experience</h2>
         <p>
-        I have worked on some fascinating projects alongside amazing professionals over the last few years. Recently I have stepped outside of the world of mechanical engineering to explore computer science and product design.
+        Over the past few years, I’ve had the chance to work alongside amazing professionals on impactful projects spanning mechanical design, product development, and front-end UX. I’m now looking for Product Design Engineer roles where I can apply and continue growing my multidisciplinary skillset.
         </p>
 
         {/* <a href={resume} download="cFulton.pdf"><button className="linkSection">Resume</button></a> */}
